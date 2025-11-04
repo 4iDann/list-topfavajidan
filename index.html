@@ -1,0 +1,2211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style-favorit.css">
+  <link rel="stylesheet" href="style-buku.css">
+  <link rel="stylesheet" href="style-musik.css">
+  <link rel="stylesheet" href="style-film.css">
+  <link rel="stylesheet" href="style-anime.css">
+  <title>Favorit Saya</title>
+</head>
+
+<body>
+  <!-- Navigasi -->
+  <nav>
+    <a href="#" class="active" onclick="showContent('profil', this)">👤 Tentang Ajidan</a>
+    <a href="#" onclick="showContent('buku', this)">📚 Buku</a>
+    <a href="#" onclick="showContent('musik', this)">🎵 Musik</a>
+    <a href="#" onclick="showContent('film', this)">🎬 Film/Tv Series</a>
+    <a href="#" onclick="showContent('anime', this)">🎬 Anime</a>
+    <a href="#" onclick="showContent('bantuan', this)">❗ Bantuan</a>
+  </nav>
+
+<section>
+    <!-- Profil -->
+  <div id="profil" class="content active">
+    <h1>👤 Profil Saya</h1>
+    <div class="profile-container">
+      <img src="Gambar/List2.jpg" alt="Foto Profil" class="foto-profile">
+      <h2>Muhammad Ajidannor Rahman</h2>
+      <p>
+        Halo! Saya penggemar buku, musik, dan film.  
+        Saya suka membaca buku sejarah, mendengarkan musik pop,
+        serta menonton film bertema aksi dan thriller.  
+        Website ini berisi daftar favorit saya di setiap kategori.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+    <!-- Buku Favorit -->
+<div id="buku" class="content">
+    <h1>📚 Buku Favorit</h1>
+
+    <!-- Total Buku, Urutkan, dan Cari Buku -->
+    <div class="filter-bar">
+
+        <!-- Total Buku -->
+        <div class="total-buku">
+            Total Buku: <span id="totalbuku"></span>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+
+            <!-- Sort dropdown -->
+            <label for="sortbuku" class="sort-label">Sort by</label>
+            <select id="sortbuku" class="styled-select">
+                <option value="rating-desc">Rating Tertinggi</option>
+                <option value="rating-asc">Rating Terendah</option>
+                <option value="name-asc">A → Z</option>
+                <option value="name-desc">Z → A</option>
+            </select>
+
+            <!-- Search input -->
+            <input type="text" id="searchbuku" class="styled-search" placeholder="Search buku..." />
+        </div>
+    </div>
+
+    <!-- Galeri Buku -->
+    <div class="gallery" id="bukucontainer">
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/SDYDS.jpg"
+            alt="Buku2"
+            usemap="#buku-map2">
+            <map name="buku-map2">
+                <area
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="Buku2" 
+                href="https://drive.google.com/file/d/13EY8_yLWPM9lsJG9Q1SFW9wIZK4VulLt/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/MAF.jpg"
+            alt="Buku3"
+            usemap="#buku-map3">
+            <map name="buku-map3">
+                <area
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="Buku3"
+                href="https://drive.google.com/file/d/1obBMFRRDQptMLeMOCxNUktT38cE6Is1t/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/FT.jpg"
+            alt="Buku4"
+            usemap="#buku-map4">
+            <map name="buku-map4">
+                <area
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="Buku4"
+                href="https://drive.google.com/file/d/1XrC_AcZFpUBP2CDnM4-kgyCXAfP58sNE/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/LB.jpg"
+            alt="Buku5"
+            usemap="#buku-map5">
+            <map name="buku-map5">
+                <area
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="Buku5"
+                href="https://drive.google.com/file/d/1tp5TEipSuW_vcAMQ1QqFPsTBuibBJA_l/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/SUBBA.jpg"
+            alt="Buku6"
+            usemap="#buku-map6">
+            <map name="buku-map6">
+                <area
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="Buku6"
+                href="https://drive.google.com/file/d/1xESVzMcVW-MR8vh-Vdp0ed03mlvnfrGP/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/bumi.jpg"
+            alt="TL1"
+            usemap="#tl-map1">
+            <map name="tl-map1">
+                <area
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="TL1"
+                href="https://drive.google.com/file/d/1wZIfOvq4wNtve04QHtnL-HpvWAQS9OjU/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/bulan.jpg"
+            alt="TL2"
+            usemap="#tl-map2">
+            <map name="tl-map2">
+                <area
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="TL2"
+                href="https://drive.google.com/file/d/1rp42tkVd5a4gyi3E58vTKLMBz9Pp3MZN/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/matahari.jpg"
+            alt="TL3"
+            usemap="#tl-map3">
+            <map name="tl-map3">
+                <area
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="TL3"
+                href="https://drive.google.com/file/d/1Z7P5o2f6DHu5RePHDNxLtiC_RtqltJxu/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/bintang.jpg"
+            alt="TL4"
+            usemap="#tl-map4">
+            <map name="tl-map4">
+                <area 
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="TL4"
+                href="https://drive.google.com/file/d/10qVVZFordmZ3mhLINqIsD1CPHbzSuz46/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/cerozdanbatozar.jpg"
+            alt="TL5"
+            usemap="#tl-map5">
+            <map name="tl-map5">
+                <area
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="TL5"
+                href="https://drive.google.com/file/d/1IPQjr3-aAxfgK4X1Zi5GWfxlI36ooSp7/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/komet.jpg"
+            alt="TL6"
+            usemap="#tl-map6">
+            <map name="tl-map6">
+                <area
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="TL6"
+                href="https://drive.google.com/file/d/1ap1RKAnemqTT43DHEzM7dalexNRxnnUX/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/km.jpg"
+            alt="TL7"
+            usemap="#tl-map7">
+            <map name="tl-map7">
+                <area
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="TL7"
+                href="https://drive.google.com/file/d/1prv6v34N9ultrBX94h3Sq3QzBrSbkZWc/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/selena.jpg"
+            alt="TL8"
+            usemap="#tl-map8">
+            <map name="tl-map8">
+                <area
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="TL8"
+                href="https://drive.google.com/file/d/1HzOjZCKOuG8jhcK43mjkLbT-Z1f33Syn/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 3/nebula.jpg"
+            alt="TL9"
+            usemap="#tl-map9">
+            <map name="tl-map9">
+                <area
+                shape="rect"
+                coords="36,35,1993,2998"
+                alt="TL9"
+                href="https://drive.google.com/file/d/12sWDHtPu069gOId81ucat2ElUdLg3nik/view?usp=drive_link"
+                target="_blank">
+            </map>
+        </div>
+    </div>
+</section>
+
+<section>
+  <!-- Musik Favorit -->
+<div id="musik" class="content">
+    <h1>🎵 Musik Favorit</h1>
+
+    <!-- Total Musik, Urutkan, dan Cari Musik -->
+    <div class="filter-bar">
+
+        <!-- Total Musik -->
+        <div class="total-musik">
+            Total Musik: <span id="totalmusik"></span>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+
+            <!-- Sort dropdown -->
+            <label for="sortmusik" class="sort-label">Sort by</label>
+            <select id="sortmusik" class="styled-select">
+                <option value="rating-desc">Rating Tertinggi</option>
+                <option value="rating-asc">Rating Terendah</option>
+                <option value="name-asc">A → Z</option>
+                <option value="name-desc">Z → A</option>
+            </select>
+
+            <!-- Search input -->
+            <input type="text" id="searchmusik" class="styled-search" placeholder="Search musik..." />
+        </div>
+    </div>
+
+    <!-- Galeri Musik -->
+    <div class="gallery" id="musikcontainer">
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 2/annie-wavetoearth.jpg"
+            alt="Musik1"
+            usemap="#music-map1">
+            <map name="music-map1">
+                <area shape="rect"
+                coords="36,35,1993,2998"
+                alt="Musik1"
+                href="https://www.youtube.com/watch?v=MSOd9osDhJg&list=RDMSOd9osDhJg&start_radio=1"
+                target="_blank">
+            </map>
+        </div>
+        <div class="info">
+            <h3> Annie </h3>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 2/bonfire-wavetoearth.jpg"
+            alt="Musik2"
+            usemap="#music-map2">
+            <map name="music-map2">
+                <area shape="rect"
+                coords="3,6,992,1485"
+                alt="Musik2"
+                href="https://www.youtube.com/watch?v=clMBbfA2HlY&list=RDclMBbfA2HlY&start_radio=1"
+                target="_blank">
+            </map>
+        </div>
+        <div class="info">
+            <h3> Bonfire </h3>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 2/seasons-wavetoearth.jpg"
+            alt="Musik3"
+            usemap="#music-map3">
+            <map name="music-map3">
+                <area shape="rect"
+                coords="7,10,1989,2969"
+                alt="Musik3"
+                href="https://www.youtube.com/watch?v=CnVVjLOGVoY&list=RDCnVVjLOGVoY&start_radio=1"
+                target="_blank">
+            </map>
+        </div>
+        <div class="info">
+            <h3> Seasons </h3>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 2/homesick-wavetoearth.jpg"
+            alt="Musik4"
+            usemap="#music-map4">
+            <map name="music-map4">
+                <area shape="rect"
+                coords="1,0,413,596"
+                alt="Musik4"
+                href="https://www.youtube.com/watch?v=cvXLkCDhnFA&list=RDcvXLkCDhnFA&start_radio=1"
+                target="_blank">
+            </map>
+        </div>
+        <div class="info">
+            <h3> Homesick </h3>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 2/light-wavetoearth.jpg"
+            alt="Musik5"
+            usemap="#music-map5">
+            <map name="music-map5">
+                <area shape="rect"
+                coords="6,10,1552,2224"
+                alt="Musik5"
+                href="https://www.youtube.com/watch?v=6DLLVIOBRmQ&list=RD6DLLVIOBRmQ&start_radio=1"
+                target="_blank">
+            </map>
+        </div>
+        <div class="info">
+            <h3> Light </h3>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="poster">
+            <img src="Gambar 2/daisy-wavetoearth.jpg"
+            alt="Musik6"
+            usemap="#music-map6">
+            <map name="music-map6">
+                <area shape="rect"
+                coords="5,6,1981,2989"
+                alt="Musik6"
+                href="https://www.youtube.com/watch?v=OwHonodA2hE&list=RDOwHonodA2hE&start_radio=1"
+                target="_blank">
+            </map>
+        </div>
+        <div class="info">
+            <h3> Daisy </h3>
+        </div>
+    </div>
+</section>
+
+<section>
+    <!-- film Favorit -->
+  <div id="film" class="content">
+    <h1>🎬 List Film</h1>
+
+    <!-- Total Film, Urutkan, dan Cari Film -->
+    <div class="filter-bar">
+
+        <!-- Total Film -->
+        <div class="total-film">
+            Total Film: <span id="totalfilm"></span>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+
+            <!-- Sort dropdown -->
+            <label for="sortfilm" class="sort-label">Sort by</label>
+            <select id="sortfilm" class="styled-select">
+                <option value="rating-desc">Rating Tertinggi</option>
+                <option value="rating-asc">Rating Terendah</option>
+                <option value="name-asc">A → Z</option>
+                <option value="name-desc">Z → A</option>
+            </select>
+
+            <!-- Search input -->
+            <input type="text" id="searchfilm" class="styled-search" placeholder="Search film..." />
+        </div>
+    </div>
+
+   <!-- Galeri film -->
+    <div class="gallery" id="filmcontainer">
+    <div class="gallery-item" data-rating="9.5">
+        <div class="poster">
+        <img src="Gambar/12 angry man.jpg"
+        alt="12 Angry Man"
+        usemap="#map1">
+        <map name="map1">
+            <area
+            shape="rect"
+            coords="36,35,1993,2998"
+            alt="12 Angry Man"
+            href="https://www.imdb.com/title/tt0050083"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>12 Angry Men</h3>
+            <p class="rating">⭐ 9.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="10">
+        <div class="poster">
+        <img src="Gambar/into the wild.jpg"
+        alt="Into The Wild"
+        usemap="#map2">
+        <map name="map2">
+            <area
+            shape="rect"
+            coords="3,6,992,1485"
+            alt="Into The Wild"
+            href="https://www.imdb.com/title/tt0758758/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info"> 
+            <h3>Into The Wild</h3>
+            <p class="rating">⭐ 10</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8">
+        <div class="poster">
+        <img src="Gambar/knives.jpg"
+        alt="Knives Out"
+        usemap="#map3">
+        <map name="map3">
+            <area
+            shape="rect"
+            coords="7,10,1989,2969"
+            alt="Knives Out"
+            href="https://www.imdb.com/title/tt8946378/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">    
+            <h3>Knives Out</h3>
+            <p class="rating">⭐ 8</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="9">
+        <div class="poster">
+        <img src="Gambar/Oppenheimer.jpg"
+        alt="Oppenheimer"
+        usemap="#map4">
+        <map name="map4">
+            <area
+            shape="rect"
+            coords="1,0,413,596"
+            alt="Oppenheimer"
+            href="https://www.imdb.com/title/tt15398776/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Oppenheimer</h3>
+            <p class="rating">⭐ 9</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="9.3">
+        <div class="poster">
+        <img src="Gambar/Shawshank.jpg"
+        alt="Shawshank Redemption"
+        usemap="#map5">
+        <map name="map5">
+            <area
+            shape="rect"
+            coords="6,10,1552,2224"
+            alt="Shawshank Redemption"
+            href="https://www.imdb.com/title/tt0111161/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>The Shawshank Redemption</h3>
+            <p class="rating">⭐ 9.3</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="9">
+        <div class="poster">
+        <img src="Gambar/tdk.jpg"
+        alt="The Dark Knight"
+        usemap="#map6">
+        <map name="map6">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="The Dark Knight"
+            href="https://www.imdb.com/title/tt0468569/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>The Dark Knight</h3>
+            <p class="rating">⭐ 9</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="9.6">
+        <div class="poster">
+        <img src="Gambar/pirates.jpg"
+        alt="Pirates Of The Caribbean"
+        usemap="#map7">
+        <map name="map7">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="Pirates Of The Caribbean"
+            href="https://www.imdb.com/title/tt0325980/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Pirates of the Caribbean</h3>
+            <p class="rating">⭐ 9.6</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="10">
+        <div class="poster">
+        <img src="Gambar/kingdom.jpg"
+        alt="Kingdom Of Heaven"
+        usemap="#map8">
+        <map name="map8">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="Kingdom Of Heaven"
+            href="https://www.imdb.com/title/tt0320661/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Kingdom of Heaven</h3>
+            <p class="rating">⭐ 10</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="9.2">
+        <div class="poster">
+        <img src="Gambar/3 idiots.jpg"
+        alt="3 Idiots"
+        usemap="#map9">
+        <map name="map9">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="3 Idiots"
+            href="https://www.imdb.com/title/tt1187043/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>3 Idiots</h3>
+            <p class="rating">⭐ 9.2</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.7">
+        <div class="poster">
+        <img src="Gambar/parasite.jpg"
+        alt="Parasite"
+        usemap="#map10">
+        <map name="map10">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="Parasite"
+            href="https://www.imdb.com/title/tt6751668/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Parasite</h3>
+            <p class="rating">⭐ 8.7</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8">
+        <div class="poster">
+    <img src="Gambar/deadpool.jpg"
+        alt="Deadpool"
+        usemap="#map11">
+        <map name="map11">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="Deadpool"
+            href="https://www.imdb.com/title/tt1431045/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Deadpool</h3>
+            <p class="rating">⭐ 8</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.8">
+        <div class="poster">
+    <img src="Gambar/inception.jpg"
+        alt="Inception"
+        usemap="#map12">
+        <map name="map12">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="Inception"
+            href="https://www.imdb.com/title/tt1375666/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Inception</h3>
+            <p class="rating">⭐ 8.8</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="9.2">
+        <div class="poster">
+    <img src="Gambar/joker.jpg"
+        alt="Joker"
+        usemap="#map13">
+        <map name="map13">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="Joker"
+            href="https://www.imdb.com/title/tt7286456/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Joker</h3>
+            <p class="rating">⭐ 9.2</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.4">
+        <div class="poster">
+    <img src="Gambar/prestige.jpg"
+        alt="Prestige"
+        usemap="#map14">
+        <map name="map14">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="Prestige"
+            href="https://www.imdb.com/title/tt0482571/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>The Prestige</h3>
+            <p class="rating">⭐ 8.4</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.5">
+        <div class="poster">
+    <img src="Gambar/revenant.jpg"
+        alt="Revenant"
+        usemap="#map15">
+        <map name="map15">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="Revenant"
+            href="https://www.imdb.com/title/tt1663202/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>The Revenant</h3>
+            <p class="rating">⭐ 8.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.2">
+        <div class="poster">
+    <img src="Gambar/coda.jpg"
+        alt="Coda"
+        usemap="#map16">
+        <map name="map16">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="Coda"
+            href="https://www.imdb.com/title/tt10366460/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Coda</h3>
+            <p class="rating">⭐ 8.2</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.8">
+        <div class="poster">
+    <img src="Gambar/fightclub.jpg"
+        alt="FightClub"
+        usemap="#map17">
+        <map name="map17">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="FightClub"
+            href="https://www.imdb.com/title/tt0137523/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Fight Club</h3>
+            <p class="rating">⭐ 8.8</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8">
+        <div class="poster">
+    <img src="Gambar/gonegirl.jpg"
+        alt="GoneGirl"
+        usemap="#map18">
+        <map name="map18">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="GoneGirl"
+            href="https://www.imdb.com/title/tt2267998/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Gone Girl</h3>
+            <p class="rating">⭐ 8</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.7">
+        <div class="poster">
+    <img src="Gambar/swep2.jpg"
+        alt="StarWarsEp2"
+        usemap="#map19">
+        <map name="map19">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="StarWarsEp2"
+            href="https://www.imdb.com/title/tt0121765/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Star Wars Eps.2</h3>
+            <p class="rating">⭐ 8.7</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.7">
+        <div class="poster">
+    <img src="Gambar/interstellar.jpg"
+        alt="Interstellar"
+        usemap="#map20">
+        <map name="map20">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="Interstellar"
+            href="https://www.imdb.com/title/tt0816692/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Interstellar</h3>
+            <p class="rating">⭐ 8.7</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.2">
+        <div class="poster">
+    <img src="Gambar/prisonners.jpg"
+        alt="prisonners"
+        usemap="#map21">
+        <map name="map21">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="Interstellar"
+            href="https://www.imdb.com/title/tt1392214/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Prisonners</h3>
+            <p class="rating">⭐ 8.2</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.2">
+        <div class="poster">
+    <img src="Gambar/shutterisland.jpg"
+        alt="ShutterIsland"
+        usemap="#map22">
+        <map name="map22">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="ShutterIsland"
+            href="https://www.imdb.com/title/tt1130884/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Shutter Island</h3>
+            <p class="rating">⭐ 8.2</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.9">
+        <div class="poster">
+    <img src="Gambar/titanic.jpg"
+        alt="Titanic"
+        usemap="#map23">
+        <map name="map23">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="Titanic"
+            href="https://www.imdb.com/title/tt0120338/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Titanic</h3>
+            <p class="rating">⭐ 7.9</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.2">
+        <div class="poster">
+    <img src="Gambar/taxidriver.jpg"
+        alt="TaxiDriver"
+        usemap="#map24">
+        <map name="map24">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="TaxiDriver"
+            href="https://www.imdb.com/title/tt0075314/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Taxi Driver</h3>
+            <p class="rating">⭐ 8.2</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.2">
+        <div class="poster">
+    <img src="Gambar/thetrumahshow.jpg"
+        alt="TheTrumanShow"
+        usemap="#map25">
+        <map name="map25">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="TheTrumanShow"
+            href="https://www.imdb.com/title/tt0120382/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>The Truman Show</h3>
+            <p class="rating">⭐ 8.2</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="9.5">
+        <div class="poster">
+    <img src="Gambar/bp.jpg"
+        alt="BlackPanther"
+        usemap="#map26">
+        <map name="map26">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="BlackPanther"
+            href="https://www.imdb.com/title/tt1825683/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Black Panther</h3>
+            <p class="rating">⭐ 9.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.4">
+        <div class="poster">
+    <img src="Gambar/ib.jpg"
+        alt="IngloriousBastard"
+        usemap="#map27">
+        <map name="map27">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="IngloriousBastard"
+            href="https://www.imdb.com/title/tt0361748/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Inglorious Bastard</h3>
+            <p class="rating">⭐ 8.4</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8">
+        <div class="poster">
+    <img src="Gambar/dune.jpg"
+        alt="DunePartOne"
+        usemap="#map28">
+        <map name="map28">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="DunePartOne"
+            href="https://www.imdb.com/title/tt1160419/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Dune: Part One</h3>
+            <p class="rating">⭐ 8</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.4">
+        <div class="poster">
+    <img src="Gambar/dune2.jpg"
+        alt="DunePartTwo"
+        usemap="#map29">
+        <map name="map29">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="DunePartTwo"
+            href="https://www.imdb.com/title/tt15239678/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Dune: Part Two</h3>
+            <p class="rating">⭐ 8.4</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.4">
+        <div class="poster">
+    <img src="Gambar/infinity.jpg"
+        alt="aiw"
+        usemap="#map30">
+        <map name="map30">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="aiw"
+            href="https://www.imdb.com/title/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Avengers: Infinity War</h3>
+            <p class="rating">⭐ 8.4</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.4">
+        <div class="poster">
+    <img src="Gambar/aeg.jpg"
+        alt="AvengersEndgame"
+        usemap="#map31">
+        <map name="map31">
+            <area shape="rect" coords="5,6,1981,2989" alt="AvengersEndgame" href="https://www.imdb.com/title/tt4154796/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Avengers: Endgame</h3>
+            <p class="rating">⭐ 8.4</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.3">
+        <div class="poster">
+    <img src="Gambar/gwh.jpg"
+        alt="gwh"
+        usemap="#map32">
+        <map name="map32">
+            <area shape="rect" coords="5,6,1981,2989" alt="gwh" href="https://www.imdb.com/title/tt0119217/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Good Will Hunting</h3>
+            <p class="rating">⭐ 8.3</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.2">
+        <div class="poster">
+    <img src="Gambar/loki1.jpg"
+        alt="loki1"
+        usemap="#map33">
+        <map name="map33">
+            <area shape="rect" coords="5,6,1981,2989" alt="loki1" href="https://www.imdb.com/title/tt9140554/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Loki</h3>
+            <p class="rating">⭐ 8.2</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.2">
+        <div class="poster">
+    <img src="Gambar/lokis2.jpg"
+        alt="loki2"
+        usemap="#map34">
+        <map name="map34">
+            <area shape="rect" coords="5,6,1981,2989" alt="loki2" href="https://www.imdb.com/title/tt9140554/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Loki</h3>
+            <p class="rating">⭐ 8.2</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.1">
+        <div class="poster">
+    <img src="Gambar/cmiyc.jpg"
+        alt="cmiyc"
+        usemap="#map35">
+        <map name="map35">
+            <area shape="rect" coords="5,6,1981,2989" alt="cmiyc" href="https://www.imdb.com/title/tt0264464/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Catch Me If You Can</h3>
+            <p class="rating">⭐ 8.1</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.1">
+        <div class="poster">
+    <img src="Gambar/pk.jpg"
+        alt="pk"
+        usemap="#map36">
+        <map name="map36">
+            <area shape="rect" coords="5,6,1981,2989" alt="pk" href="https://www.imdb.com/title/tt2338151/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>PK</h3>
+            <p class="rating">⭐ 8.1</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.9">
+        <div class="poster">
+    <img src="Gambar/lop.jpg"
+        alt="lop"
+        usemap="#map37">
+        <map name="map37">
+            <area shape="rect" coords="5,6,1981,2989" alt="lop" href="https://www.imdb.com/title/tt0454876/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Life of Pi</h3>
+            <p class="rating">⭐ 7.9</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.8">
+        <div class="poster">
+    <img src="Gambar/dunkirk.jpg"
+        alt="dunkirk"
+        usemap="#map38">
+        <map name="map38">
+            <area shape="rect" coords="5,6,1981,2989" alt="dunkirk" href="https://www.imdb.com/title/tt5013056/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Dunkirk</h3>
+            <p class="rating">⭐ 7.8</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.8">
+        <div class="poster">
+    <img src="Gambar/mbts.jpg"
+        alt="mbts"
+        usemap="#map39">
+        <map name="map39">
+            <area shape="rect" coords="5,6,1981,2989" alt="mbts" href="https://www.imdb.com/title/tt4034228/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Manchester by the Sea</h3>
+            <p class="rating">⭐ 7.8</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.6">
+        <div class="poster">
+    <img src="Gambar/500dos.jpg"
+        alt="500dos"
+        usemap="#map40">
+        <map name="map40">
+            <area shape="rect" coords="5,6,1981,2989" alt="500dos" href="https://www.imdb.com/title/tt1022603/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>(500) Days of Summer</h3>
+            <p class="rating">⭐ 7.6</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.6">
+        <div class="poster">
+    <img src="Gambar/fury.jpg"
+        alt="fury"
+        usemap="#map41">
+        <map name="map41">
+            <area shape="rect" coords="5,6,1981,2989" alt="fury" href="https://www.imdb.com/title/tt2713180/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Fury</h3>
+            <p class="rating">⭐ 7.6</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.5">
+        <div class="poster">
+    <img src="Gambar/dmc.jpg"
+        alt="dmc"
+        usemap="#map42">
+        <map name="map42">
+            <area shape="rect" coords="5,6,1981,2989" alt="dmc" href="https://www.imdb.com/title/tt14039582/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Drive My Car</h3>
+            <p class="rating">⭐ 7.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.3">
+        <div class="poster">
+    <img src="Gambar/cruella.jpg"
+        alt="cruella"
+        usemap="#map43">
+        <map name="map43">
+            <area shape="rect" coords="5,6,1981,2989" alt="cruella" href="https://www.imdb.com/title/tt3228774/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Cruella</h3>
+            <p class="rating">⭐ 7.3</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.3">
+        <div class="poster">
+    <img src="Gambar/theking.jpg"
+        alt="cruella"
+        usemap="#map44">
+        <map name="map44">
+            <area shape="rect" coords="5,6,1981,2989" alt="cruella" href="https://www.imdb.com/title/tt7984766/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>The King</h3>
+            <p class="rating">⭐ 7.3</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.3">
+        <div class="poster">
+    <img src="Gambar/mk.jpg"
+        alt="mk"
+        usemap="#map45">
+        <map name="map45">
+            <area shape="rect" coords="5,6,1981,2989" alt="mk" href="https://www.imdb.com/title/tt10234724/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Moon Knight</h3>
+            <p class="rating">⭐ 7.3</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="6.8">
+        <div class="poster">
+    <img src="Gambar/ghostory.jpg"
+        alt="gs"
+        usemap="#map46">
+        <map name="map46">
+            <area shape="rect" coords="5,6,1981,2989" alt="gs" href="https://www.imdb.com/title/tt6265828/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Ghost Story</h3>
+            <p class="rating">⭐ 6.8</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.5">
+        <div class="poster">
+    <img src="Gambar/whiplash.jpg"
+        alt="whiplash"
+        usemap="#map47">
+        <map name="map47">
+            <area shape="rect" coords="5,6,1981,2989" alt="whiplash" href="https://www.imdb.com/title/tt2582802/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Whiplash</h3>
+            <p class="rating">⭐ 8.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.8">
+        <div class="poster">
+    <img src="Gambar/forrest.jpg"
+        alt="forrest"
+        usemap="#map48">
+        <map name="map48">
+            <area shape="rect" coords="5,6,1981,2989" alt="forrest" href="https://www.imdb.com/title/tt0109830/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Forrest Gump</h3>
+            <p class="rating">⭐ 8.8</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.6">
+        <div class="poster">
+    <img src="Gambar/spr.jpg"
+        alt="spr"
+        usemap="#map49">
+        <map name="map49">
+            <area shape="rect" coords="5,6,1981,2989" alt="spr" href="https://www.imdb.com/title/tt0120815/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Saving Private Ryan</h3>
+            <p class="rating">⭐ 8.8</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.1">
+        <div class="poster">
+    <img src="Gambar/tb.jpg"
+        alt="tb"
+        usemap="#map50">
+        <map name="map50">
+            <area shape="rect" coords="5,6,1981,2989" alt="tb" href="https://www.imdb.com/title/tt20969586/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Thunderbolts</h3>
+            <p class="rating">⭐ 7.1</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.5">
+        <div class="poster">
+    <img src="Gambar/django.jpg"
+        alt="django"
+        usemap="#map51">
+        <map name="map51">
+            <area shape="rect" coords="5,6,1981,2989" alt="django" href="https://www.imdb.com/title/tt1853728/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Django Unchained</h3>
+            <p class="rating">⭐ 8.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.6">
+        <div class="poster">
+    <img src="Gambar/tgm.jpg"
+        alt="tgm"
+        usemap="#map52">
+        <map name="map52">
+            <area shape="rect" coords="5,6,1981,2989" alt="tgm" href="https://www.imdb.com/title/tt0120689/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>The Green Mile</h3>
+            <p class="rating">⭐ 8.6</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.1">
+        <div class="poster">
+    <img src="Gambar/io.jpg"
+        alt="io"
+        usemap="#map53">
+        <map name="map53">
+            <area shape="rect" coords="5,6,1981,2989" alt="io" href="https://www.imdb.com/title/tt2096673/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Inside Out</h3>
+            <p class="rating">⭐ 8.1</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.5">
+        <div class="poster">
+    <img src="Gambar/io2.jpg"
+        alt="io2"
+        usemap="#map54">
+        <map name="map54">
+            <area shape="rect" coords="5,6,1981,2989" alt="io2" href="https://www.imdb.com/title/tt22022452/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Inside Out 2</h3>
+            <p class="rating">⭐ 7.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="6.3">
+        <div class="poster">
+    <img src="Gambar/napolleon.jpg"
+        alt="napolleon"
+        usemap="#map55">
+        <map name="map55">
+            <area shape="rect" coords="5,6,1981,2989" alt="napolleon" href="https://www.imdb.com/title/tt13287846/" target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Napolleon</h3>
+            <p class="rating">⭐ 6.3</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.8">
+        <div class="poster">
+    <img src="Gambar/thebatman.jpg"
+        alt="tbm"
+        usemap="#map56">
+        <map name="map56">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="tbm"
+            href="https://www.imdb.com/title/tt1877830/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>The Batman</h3>
+            <p class="rating">⭐ 7.8</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.1">
+        <div class="poster">
+    <img src="Gambar/gokn.jpg"
+        alt="gokn"
+        usemap="#map57">
+        <map name="map57">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="gokn"
+            href="https://www.imdb.com/title/tt11564570/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Glass Onion: A Knives Out Mystery</h3>
+            <p class="rating">⭐ 7.1</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.3">
+        <div class="poster">
+    <img src="Gambar/tslowm.jpg"
+        alt="tslowm"
+        usemap="#map58">
+        <map name="map58">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="tslowm"
+            href="https://www.imdb.com/title/tt0359950/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>The Secret Life of Walter Mitty</h3>
+            <p class="rating">⭐ 7.3</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.4">
+        <div class="poster">
+    <img src="Gambar/bb.jpg"
+        alt="bb"
+        usemap="#map59">
+        <map name="map59">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="bb"
+            href="https://www.imdb.com/title/tt1226837/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Beautiful Boy</h3>
+            <p class="rating">⭐ 7.4</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="6.5">
+        <div class="poster">
+    <img src="Gambar/12s.jpg"
+        alt="tslowm"
+        usemap="#map60">
+        <map name="map60">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="tslowm"
+            href="https://www.imdb.com/title/tt1413492/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>12 Strong</h3>
+            <p class="rating">⭐ 6.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.5">
+        <div class="poster">
+    <img src="Gambar/gld.jpg"
+        alt="gld"
+        usemap="#map61">
+        <map name="map61">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="gld"
+            href="https://www.imdb.com/title/tt0172495/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Gladiator</h3>
+            <p class="rating">⭐ 8.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="6.5">
+        <div class="poster">
+    <img src="Gambar/gld2.jpg"
+        alt="gld2"
+        usemap="#map62">
+        <map name="map62">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="gld2"
+            href="https://www.imdb.com/title/tt9218128/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Gladiator II</h3>
+            <p class="rating">⭐ 6.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="5.8">
+        <div class="poster">
+    <img src="Gambar/mhk.jpg"
+        alt="mhk"
+        usemap="#map63">
+        <map name="map63">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="mhk"
+            href="https://www.imdb.com/title/tt13696452/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Money Heist Korea</h3>
+            <p class="rating">⭐ 5.8</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="6.3">
+        <div class="poster">
+    <img src="Gambar/blrn.jpg"
+        alt="blrn"
+        usemap="#map64">
+        <map name="map64">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="blrn"
+            href="https://www.imdb.com/title/tt26350277/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Ballerina</h3>
+            <p class="rating">⭐ 6.3</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.1">
+        <div class="poster">
+    <img src="Gambar/ert.jpg"
+        alt="ert"
+        usemap="#map65">
+        <map name="map65">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="ert"
+            href="https://www.imdb.com/title/tt2719848/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Everest</h3>
+            <p class="rating">⭐ 7.1</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="6.5">
+        <div class="poster">
+    <img src="Gambar/narnia.jpg"
+        alt="narnia"
+        usemap="#map66">
+        <map name="map66">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="narnia"
+            href="https://www.imdb.com/title/tt0363771/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>The Chronicles of Narnia</h3>
+            <p class="rating">⭐ 6.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="6.5">
+        <div class="poster">
+    <img src="Gambar/narnia2.jpg"
+        alt="narnia2"
+        usemap="#map67">
+        <map name="map67">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="narnia2"
+            href="https://www.imdb.com/title/tt0499448/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>The Chronicles of Narnia: Prince Caspian</h3>
+            <p class="rating">⭐ 6.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="6.3">
+        <div class="poster">
+    <img src="Gambar/narnia3.jpg"
+        alt="narnia3"
+        usemap="#map68">
+        <map name="map68">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="narnia3"
+            href="https://www.imdb.com/title/tt0980970/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>The Chronicles of Narnia: The Voyage of the Dawn Treader</h3>
+            <p class="rating">⭐ 6.3</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="6.5">
+        <div class="poster">
+    <img src="Gambar/tws.jpg"
+        alt="tws"
+        usemap="#map69">
+        <map name="map69">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="tws"
+            href="https://www.imdb.com/title/tt12584954/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Twisters</h3>
+            <p class="rating">⭐ 6.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="6.3">
+        <div class="poster">
+    <img src="Gambar/tkm.jpg"
+        alt="tkm"
+        usemap="#map70">
+        <map name="map70">
+            <area
+            shape="rect"
+            coords="5,6,1981,2989"
+            alt="tkm"
+            href="https://www.imdb.com/title/tt6856242/"
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>The King's Man</h3>
+            <p class="rating">⭐ 6.3</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <!-- Anime Favorit -->
+  <div id="anime" class="content">
+    <h1>🎬 List Anime</h1>
+
+    <!-- Total Anime, Urutkan, dan Cari Anime -->
+    <div class="filter-bar">
+
+        <!-- Total Anime -->
+        <div class="total-anime">
+            Total Anime: <span id="totalanime"></span>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+
+            <!-- Sort dropdown -->
+            <label for="sortanime" class="sort-label">Sort by</label>
+            <select id="sortanime" class="styled-select">
+                <option value="rating-desc">Rating Tertinggi</option>
+                <option value="rating-asc">Rating Terendah</option>
+                <option value="name-asc">A → Z</option>
+                <option value="name-desc">Z → A</option>
+            </select>
+
+            <!-- Search input -->
+            <input type="text" id="searchanime" class="styled-search" placeholder="Search anime..." />
+        </div>
+    </div>
+
+   <!-- Galeri Anime -->
+    <div class="gallery" id="animecontainer">
+    <div class="gallery-item" data-rating="8.5">
+        <div class="poster">
+        <img src="Gambar 4/haikyu.jpg"
+        usemap="#map-anime1">
+        <map name="map-anime1">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/20583/Haikyuu" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Haikyuu!</h3>
+            <p class="rating">⭐ 8.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.7">
+        <div class="poster">
+        <img src="Gambar 4/haikyus2.jpg"
+        usemap="#map-anime2">
+        <map name="map-anime2">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/28891/Haikyuu_Second_Season" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Haikyuu!! Second Season</h3>
+            <p class="rating">⭐ 8.7</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.6">
+        <div class="poster">
+        <img src="Gambar 4/haikyuttp2.jpg"
+        usemap="#map-anime3">
+        <map name="map-anime3">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/40776/Haikyuu_To_the_Top_Part_2" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Haikyuu!! To the Top Part 2</h3>
+            <p class="rating">⭐ 8.6</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.4">
+        <div class="poster">
+        <img src="Gambar 4/haikyuttp.jpg"
+        usemap="#map-anime4">
+        <map name="map-anime4">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/38883/Haikyuu_To_the_Top" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Haikyuu!! To the Top Part</h3>
+            <p class="rating">⭐ 8.4</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.6">
+        <div class="poster">
+        <img src="Gambar 4/dm.jpg"
+        usemap="#map-anime5">
+        <map name="map-anime5">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/52701/Dungeon_Meshi" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Dungeon Meshi</h3>
+            <p class="rating">⭐ 8.6</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.4">
+        <div class="poster">
+        <img src="Gambar 4/dp.jpg"
+        usemap="#map-anime6">
+        <map name="map-anime6">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/28223/Death_Parade" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Death Parade</h3>
+            <p class="rating">⭐ 8.4</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.5">
+        <div class="poster">
+        <img src="Gambar 4/cm.jpg"
+        usemap="#map-anime7">
+        <map name="map-anime7">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/44511/Chainsaw_Man" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Chainsaw Man</h3>
+            <p class="rating">⭐ 8.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.2">
+        <div class="poster">
+        <img src="Gambar 4/bc.jpg"
+        usemap="#map-anime8">
+        <map name="map-anime8">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/34572/Black_Clover" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Black Clover</h3>
+            <p class="rating">⭐ 8.2</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.5">
+        <div class="poster">
+        <img src="Gambar 4/agk.jpg"
+        usemap="#map-anime9">
+        <map name="map-anime9">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/22199/Akame_ga_Kill" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Akame Ga Kill</h3>
+            <p class="rating">⭐ 7.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.6">
+        <div class="poster">
+        <img src="Gambar 4/ad.jpg"
+        usemap="#map-anime10">
+        <map name="map-anime10">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/41433/Akudama_Drive" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Akuma Drive</h3>
+            <p class="rating">⭐ 7.6</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="7.5">
+        <div class="poster">
+        <img src="Gambar 4/another.jpg"
+        usemap="#map-anime11">
+        <map name="map-anime11">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/41433/Akudama_Drive" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Another</h3>
+            <p class="rating">⭐ 7.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.5">
+        <div class="poster">
+        <img src="Gambar 4/gb.jpg"
+        usemap="#map-anime12">
+        <map name="map-anime12">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/37105/Grand_Blue" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Grand Blue</h3>
+            <p class="rating">⭐ 8.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.6">
+        <div class="poster">
+        <img src="Gambar 4/gb2.jpg"
+        usemap="#map-anime13">
+        <map name="map-anime13">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/59986/Grand_Blue_Season_2" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Grand Blue Season 2</h3>
+            <p class="rating">⭐ 8.6</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.6">
+        <div class="poster">
+        <img src="Gambar 4/jjk.jpg"
+        usemap="#map-anime14">
+        <map name="map-anime14">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/40748/Jujutsu_Kaisen" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Jujutsu Kaisen</h3>
+            <p class="rating">⭐ 8.6</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.4">
+        <div class="poster">
+        <img src="Gambar 4/jjk2.jpg"
+        usemap="#map-anime15">
+        <map name="map-anime15">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/48561/Jujutsu_Kaisen_0_Movie" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Jujutsu Kaisen 0 Movie</h3>
+            <p class="rating">⭐ 8.4</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.5">
+        <div class="poster">
+        <img src="Gambar 4/kny.jpg"
+        usemap="#map-anime16">
+        <map name="map-anime16">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Kimetsu no Yaiba</h3>
+            <p class="rating">⭐ 8.5</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.6">
+        <div class="poster">
+        <img src="Gambar 4/kny2.jpg"
+        usemap="#map-anime17">
+        <map name="map-anime17">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/40456/Kimetsu_no_Yaiba_Movie__Mugen_Ressha-hen" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Kimetsu no Yaiba Movie: Mugen Ressha-hen</h3>
+            <p class="rating">⭐ 8.6</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.7">
+        <div class="poster">
+        <img src="Gambar 4/kny3.jpg"
+        usemap="#map-anime18">
+        <map name="map-anime18">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/47778/Kimetsu_no_Yaiba__Yuukaku-hen" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Kimetsu no Yaiba: Yuukaku-hen</h3>
+            <p class="rating">⭐ 8.7</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.2">
+        <div class="poster">
+        <img src="Gambar 4/kny4.jpg"
+        usemap="#map-anime19">
+        <map name="map-anime19">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/51019/Kimetsu_no_Yaiba__Katanakaji_no_Sato-hen" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Kimetsu no Yaiba: Katanakaji no Sato-hen</h3>
+            <p class="rating">⭐ 8.2</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-rating="8.4">
+        <div class="poster">
+        <img src="Gambar 4/kny5.jpg"
+        usemap="#map-anime20">
+        <map name="map-anime20">
+        <area 
+            shape="rect" 
+            coords="36,35,1993,2998" 
+            href="https://myanimelist.net/anime/55701/Kimetsu_no_Yaiba__Hashira_Geiko-hen" 
+            target="_blank">
+        </map>
+        </div>
+        <div class="info">
+            <h3>Kimetsu no Yaiba: Hashira Geiko-hen</h3>
+            <p class="rating">⭐ 8.1</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <!-- Bantuan -->
+  <div id="bantuan" class="content">
+    <h1>❗ Bantuan</h1>
+    <div class="profile-container">
+    <footer>
+    <p>Hubungi saya di 
+        <p><a href="https://www.instagram.com/ajidannn/" target="_blank">📱​@ajidannn</a></p>
+        <p><a href="2410010568ajidan@gmail,com" target="_blank"> 📩​Gmail</a></p>
+    <p>&copy;2025 Muhammad Ajidannor Rahman</p>
+    </footer>
+</section>
+
+<section>
+  <script>
+    // Fungsi navigasi tab
+    function showContent(id, element) {
+      // Sembunyikan semua konten
+      document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+      // Tampilkan konten yang sesuai
+      document.getElementById(id).classList.add('active');
+
+      // Ubah status aktif pada navigasi
+      document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+      element.classList.add('active');
+    }
+  </script>
+</section>
+
+<script>
+function showContent(id, element) {
+    // Sembunyikan semua section dengan class "content"
+    const sections = document.querySelectorAll(".content");
+    sections.forEach(sec => sec.classList.remove("active"));
+
+    // Tampilkan section yang dipilih
+    const target = document.getElementById(id);
+    if (target) target.classList.add("active");
+
+    // Update menu aktif
+    const navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(link => link.classList.remove("active"));
+    if (element) element.classList.add("active");
+
+    // Hapus script sebelumnya agar tidak dobel
+    const oldScript = document.getElementById("dynamic-script");
+    if (oldScript) oldScript.remove();
+
+    // Load script sesuai halaman
+    let script = document.createElement("script");
+    script.id = "dynamic-script";
+
+    if (id === "film") {
+        script.src = "script-film.js";
+    } 
+    else if (id === "anime") {
+        script.src = "script-anime.js";
+    }
+    else if (id === "buku") {            // ✅ Tambahan baru
+        script.src = "script-buku.js";
+    }
+    else if (id === "musik") {           // ✅ Tambahan baru
+        script.src = "script-musik.js";
+    }
+
+    document.body.appendChild(script);
+}
+</script>
+
+</body>
+</html>

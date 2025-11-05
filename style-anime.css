@@ -95,8 +95,8 @@
 
 .gallery-item {
     background: #111;
-    width: 100%;
-    height: auto;  /* sesuaikan */
+    width: 200px;
+    height: 430px;  /* sesuaikan */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,7 +114,7 @@
 .poster img {
     width: 100%;
     height: 300px;
-    object-fit: containt;
+    object-fit: content;
     border-radius: 10px;
 }
 
@@ -142,6 +142,7 @@
     background-color: black;
 
 }
+
 
 
 

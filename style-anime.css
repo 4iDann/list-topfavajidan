@@ -65,7 +65,7 @@
 /* Desktop / Laptop Besar = 6 kolom */
 @media (min-width: 1200px) {
     #animecontainer {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
@@ -142,3 +142,4 @@
     background-color: black;
 
 }
+

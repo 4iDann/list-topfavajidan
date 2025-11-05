@@ -62,32 +62,25 @@
     justify-items: center;
 }
 
-/* Desktop - 5 atau 6 per baris */
-@media (min-width: 1200px) {
-    #musikcontainer {
-        grid-template-columns: repeat(6, 1fr); /* Bisa 5 jika terlalu kecil */
-    }
-}
-
-/* Tablet */
-@media (max-width: 1024px) {
-    #musikcontainer {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-/* HP */
-@media (max-width: 768px) {
-    #musikcontainer {
-        grid-template-columns: repeat(2, 1fr); /* ✅ 2 per baris HP */
-        gap: 10px;
-    }
-}
-
-/* 6 per baris untuk layar besar (PC) */
+/* Desktop / Laptop Besar = 6 kolom */
 @media (min-width: 1200px) {
     #musikcontainer {
         grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Tablet = 4 kolom (bisa ubah 5 jika ingin) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    #musikcontainer {
+        grid-template-columns: repeat(4, 1fr); /* Ubah ke 5 jika ingin */
+    }
+}
+
+/* HP = 3 kolom */
+@media (max-width: 767px) {
+    #musikcontainer {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
 }
 
@@ -147,4 +140,5 @@
     z-index: 10;
     position: relative;
     background-color: black;
+
 }

@@ -84,10 +84,11 @@
 @media (max-width: 767px) {
     #filmcontainer {
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 8px;
     }
     .poster img {
-        height: 180px;
+        height: 160px;
+        object-fit: cover;
     }
 }
 
@@ -136,5 +137,6 @@
     color: gold;
 
 }
+
 
 

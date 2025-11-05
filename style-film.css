@@ -83,11 +83,11 @@
 /* HP = 3 kolom */
 @media (max-width: 767px) {
     #filmcontainer {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
     .poster img {
-        height: 160px;
+        height: 200px;
         object-fit: cover;
     }
 }
@@ -137,6 +137,7 @@
     color: gold;
 
 }
+
 
 
 

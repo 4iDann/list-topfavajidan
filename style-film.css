@@ -122,7 +122,7 @@
 .poster img {
     width: 100%;
     height: 260px;
-    object-fit: content;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -137,6 +137,7 @@
     color: gold;
 
 }
+
 
 
 
